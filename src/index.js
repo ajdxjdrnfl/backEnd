@@ -4,6 +4,7 @@ const port = 3000;
 
 const loggingMiddleware = (req, res, next) => {
     console.log(req);
+    console.log("finished");
     next();
 }
 app.use(loggingMiddleware);
